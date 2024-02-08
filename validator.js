@@ -10,20 +10,3 @@ function validateJSON() {
         resultContainer.innerHTML = `<span style="color: red;">Error: ${error.message}</span>`;
     }
 }
-
-function updateLineNumbers() {
-    const jsonInput = document.getElementById('jsonInput');
-    const lineNumbersContainer = document.querySelector('.line-numbers');
-
-    lineNumbersContainer.innerHTML = '';
-
-    const lineCount = jsonInput.value.split('\n').length;
-
-    for (let i = 1; i <= lineCount; i++) {
-        const lineNumberDiv = document.createElement('div');
-        lineNumberDiv.textContent = i;
-        lineNumbersContainer.appendChild(lineNumberDiv);
-    }
-}
-
-updateLineNumbers();
