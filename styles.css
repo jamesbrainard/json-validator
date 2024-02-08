@@ -3,19 +3,24 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .container {
     max-width: 600px;
-    margin: 50px auto;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 textarea {
     width: 100%;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 button {
