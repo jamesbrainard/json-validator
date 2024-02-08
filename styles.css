@@ -10,20 +10,34 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 800px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+.code-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.line-numbers {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
 textarea {
     width: 100%;
-    margin-bottom: 10px;
+    margin: 0;
+    padding: 10px;
     box-sizing: border-box;
 }
 
 button {
+    margin-top: 10px;
     padding: 10px;
     background-color: #4caf50;
     color: #fff;
